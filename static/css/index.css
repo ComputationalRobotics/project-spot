@@ -26,7 +26,6 @@ body {
   font-weight: 600;
 }
 
-
 .teaser .hero-body {
   padding-top: 0;
   padding-bottom: 3rem;
@@ -164,3 +163,11 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
