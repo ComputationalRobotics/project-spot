@@ -165,9 +165,29 @@ body {
 }
 
 img {
-  display: block !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  height: auto !important;
+  display: block; /* 确保图片是块级元素，防止额外的间距 */
+  width: 100%; /* 让图片填充父容器 */
+  max-width: 100%; /* 防止超出父容器 */
+  height: auto; /* 维持原始比例 */
+  object-fit: contain; /* 保持完整图像显示 */
 }
+
+picture {
+  display: flex; /* 让图片可以正常排列 */
+  justify-content: center; /* 图片居中 */
+  align-items: center; /* 纵向居中 */
+  width: 100%; /* 适应父容器 */
+}
+
+#results-tum {
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+}
+
+picture img {
+  max-width: 100%;
+  height: auto;
+}
+
 
