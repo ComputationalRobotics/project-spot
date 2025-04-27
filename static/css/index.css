@@ -190,4 +190,31 @@ picture img {
   height: auto;
 }
 
+/* maroon that matches the screenshot */
+:root {
+  --rss-maroon: #731818;   /* tweak if you need it darker/lighter */
+}
+
+/* whole banner */
+.rss-banner {
+  display: flex;              /* put logo and text on one line  */
+  align-items: center;        /* vertical centering             */
+  justify-content: center;   /*  ⬅ NEW: centers logo + text as a unit  */
+  gap: 0.75rem;               /* space between logo & text      */
+  color: var(--rss-maroon);   /* maroon text                    */
+  margin: 1rem 0;             /* a bit of vertical breathing-room*/
+}
+
+/* logo sizing */
+.rss-logo {
+  width: 40px;    /* looks about right; change if you need */
+  height: auto;   /* keep aspect ratio */
+}
+
+/* make sure long titles wrap nicely without breaking flex */
+.rss-text {
+  line-height: 1.25;
+}
+
+
 
